@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <script>
-        var toggle = true;
+    <input type="button" value="Open Curtain" onclick="return change(this);" />
+
+    <script type="text/javascript">
+    function change( el )
+    {
+        if ( el.value === "Open Curtain" )
+            el.value = "Close Curtain";
+        else
+            el.value = "Open Curtain";
+    }
     </script>
-<body>
-    <p>Edit B</p>
-    <script> document.write('<button onclick="document.body.style.backgroundColor = ');
-    if (toggle) {
-        document.write("'green';");
-        document.write('">Green</button>');
-    }
-    else {
-        document.write("'blue';");
-        document.write('">Blue</button>');
-    }
-    toggle = !toggle; </script>
-    </button>
-
-
-</body>
 </html>
