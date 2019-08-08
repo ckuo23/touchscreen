@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="touchscreen/all.css" media="screen" />
 <html>
-    <input type="button" value="Open Curtain" onclick="return change(this);" />
+    <input type="button" value="Green" onclick="return change(this);" />
 
     <script type="text/javascript">
     function change( el )
     {
-        if ( el.value === "Open Curtain" )
-            el.value = "Close Curtain";
-        else
-            el.value = "Open Curtain";
+        if ( el.value === "Green" ) {
+            el.value = "Blue";
+            document.body.style.backgroundColor = 'green';
+        }
+        else {
+            el.value = "Green";
+            document.body.style.backgroundColor = 'blue';
+        }
     }
     </script>
 </html>
