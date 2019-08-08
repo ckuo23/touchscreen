@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
 <html>
-    <input type="button" value="Green" onclick="return change(this);" class="myButton" />
+    <input type="button" value="Yellow" onclick="return change(this);" class="myButton" />
 
     <script type="text/javascript">
     function change( el )
     {
-        if ( el.value === "Green" ) {
-            el.value = "Blue";
-            document.body.style.backgroundColor = 'green';
+        if ( el.value === "Yellow" ) {
+            el.value = "Black";
+            document.body.style.backgroundColor = 'yellow';
         }
         else {
-            el.value = "Green";
-            document.body.style.backgroundColor = 'blue';
+            el.value = "Yellow";
+            document.body.style.backgroundColor = 'black';
         }
     }
     </script>
