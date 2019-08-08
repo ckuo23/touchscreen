@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <script>
+        var press = 1;
+    </script>
 <body>
 
 <div id="myframe"><img src="http://img1.wikia.nocookie.net/__cb20110821045825/meme/images/3/3d/LOLGuy.png" />    </div>
@@ -12,8 +15,16 @@
 
 <script>
 function myFunction(){
+    if (press = 1) {
     var myframe = document.getElementById('myframe');
     myframe.style.backgroundColor = "red";
+        press = 0;
+    }
+    else {
+        var myframe = document.getElementById('myframe');
+        myframe.style.backgroundColor = "blue";
+        press = 0;
+    }
 }
 </script>
 
