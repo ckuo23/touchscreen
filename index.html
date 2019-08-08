@@ -4,12 +4,16 @@
         var toggle = true;
     </script>
 <body>
-    <p>Edit A</p>
+    <p>Edit B</p>
     <script> document.write('<button onclick="document.body.style.backgroundColor = ');
-    if (toggle) 
+    if (toggle) {
         document.write("'green';");
         document.write('">Green</button>');
-            
+    }
+    else {
+        document.write("'blue';");
+        document.write('">Blue</button>');
+    }
     toggle = !toggle; </script>
     </button>
 
